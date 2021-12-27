@@ -1,10 +1,12 @@
 package com.messages;
 
-import java.awt.*;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
-public class Message implements Serializable{
+import io.sentry.Sentry;
+
+public class Message implements Serializable {
     private String name;
     private MessageType type;
     private String msg;
@@ -62,11 +64,11 @@ public class Message implements Serializable{
         this.list = new ArrayList<>(userList.values());
     }
 
-    public void setOnlineCount(int count){
+    public void setOnlineCount(int count) {
         this.count = count;
     }
 
-    public int getOnlineCount(){
+    public int getOnlineCount() {
         return this.count;
     }
 
