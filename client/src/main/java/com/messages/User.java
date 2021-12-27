@@ -1,7 +1,5 @@
 package com.messages;
 
-import jdk.internal.org.jline.utils.Status;
-
 import java.io.Serializable;
 
 /**
