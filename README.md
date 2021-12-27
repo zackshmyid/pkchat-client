@@ -8,4 +8,4 @@ As Soon I Possible I will Create The Server-Side Repositories
 
 Contributor : 
 
-- Zack As Andhra (9C)
+- Zack
