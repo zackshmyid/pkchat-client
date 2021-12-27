@@ -54,14 +54,6 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <groupId>org.openjfx</groupId>
-                <artifactId>javafx-maven-plugin</artifactId>
-                <version>0.0.8</version>
-                <configuration>
-                    <mainClass>HelloFX</mainClass>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
     <properties>
