@@ -9,4 +9,5 @@ public class Message implements Serializable{
     private String name;
     private MessageType type;
 
+
 }
