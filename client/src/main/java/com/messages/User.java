@@ -15,8 +15,12 @@ public class User implements Serializable {
     public void setName(String name) {
         this.name = name;
     }
+
     String name;
 
+    public String getPicture(){
+        return picture;
+    }
     public void getPicture(String picture){
         this.picture = picture;
     }
