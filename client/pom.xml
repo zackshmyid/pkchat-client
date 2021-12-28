@@ -92,5 +92,10 @@
             <artifactId>sentry</artifactId>
             <version>5.5.2</version>
         </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
+            <version>11.0.1</version>
+        </dependency>
     </dependencies>
 </project>
