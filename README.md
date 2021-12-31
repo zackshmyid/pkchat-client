@@ -1,11 +1,30 @@
-# PK Chat - Client Side
+# PK Chat - Chat Based JavaFx Library
 
-Why I Create This ? I Dunno
+Selamat Datang Di Repository PK Chat, 
 
-I Just Want To Create Chat For my Class With Java-Based As Programming Language
+Cara Menggunakan Client : 
 
-As Soon I Possible I will Create The Server-Side Repositories
+1. Download Client - Latest Di : https://github.com/smpkska/pkchat-client/releases/download/latest/pkchat.jar
+2. Apabila Kalian belum Memiliki Java Silahkan Download Java Terlebih Dahulu Di : https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html
+3. Apabila Sudah Memiliki Java Silahkan Ketik Ini Di CMD : 
+```
+java -jar pkchat.jar
+```
+Mudah Bukan :) ?
 
-Contributor : 
+Cara Membuat Server Sendiri : 
 
-- Zack
+Pastikan Device Yang akan di gunakan untuk menjadi server memenuhi dibawah ini : 
+
+1GB RAM +
+5GB Disk
+Internet
+Java JRE 8+
+
+1. Download Server - Latest Di : https://github.com/smpkska/pkchat-client/releases/download/latest/server.jar
+2. Gunakan ``tmux`` untuk membuat server 24/7 (Untuk Linux)
+3. Ketik : 
+```
+java -Xms128M -Xmx1080M -jar server.jar nogui
+```
+4. Selamat Server Kamu Sudah Berhasil Menyala, Jangan lupa buka port : 9001 dan gunakan IP Device kamu untuk konek di Client
