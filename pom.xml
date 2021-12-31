@@ -8,7 +8,7 @@
     <artifactId>JavaFx</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>PKchat-Client</name>
+    <name>PKChat-Client</name>
 
     <modules>
         <module>client</module>
