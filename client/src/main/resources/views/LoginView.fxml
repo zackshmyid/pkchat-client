@@ -30,13 +30,13 @@
             </rowConstraints>
             <children>
                 <Button id="connectBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#loginButtonAction" stylesheets="@../styles/Login.css" text="Connect" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-                <Label text="Server IP: " textAlignment="CENTER" textFill="#4070f8" GridPane.rowIndex="5" />
-                <TextField fx:id="hostnameTextfield" prefWidth="188.0" text="main.vhcmc.me" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                <Label text="Port: " textFill="#4070f8" GridPane.rowIndex="6" />
+                <Label text="Hostname: " textAlignment="CENTER" textFill="#f89406" GridPane.rowIndex="5" />
+                <TextField fx:id="hostnameTextfield" prefWidth="188.0" text="localhost" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                <Label text="Port: " textFill="#f89406" GridPane.rowIndex="6" />
                 <TextField fx:id="portTextfield" prefHeight="13.0" prefWidth="149.0" text="9001" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-                <Label text="Username: " textFill="#4070f8" GridPane.rowIndex="3" />
+                <Label text="Username: " textFill="#f89406" GridPane.rowIndex="3" />
                 <TextField fx:id="usernameTextfield" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                <Label prefHeight="22.0" prefWidth="73.0" text="Server Details" textFill="#4070f8" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <Label prefHeight="22.0" prefWidth="73.0" text="Server Details" textFill="#f89406" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                 <StackPane GridPane.columnIndex="1" GridPane.rowIndex="1">
                     <children>
                         <ImageView fx:id="Defaultview" fitHeight="93" fitWidth="93" pickOnBounds="true" preserveRatio="true">
@@ -60,8 +60,8 @@
                     <items>
                         <FXCollections fx:factory="observableArrayList">
                             <String fx:value="Default" />
-                            <String fx:value="Pria" />
-                            <String fx:value="Wanita" />
+                            <String fx:value="Dominic" />
+                            <String fx:value="Sarah" />
                         </FXCollections>
                     </items>
                 </ChoiceBox>
@@ -82,7 +82,7 @@
                         <Insets right="10.0" top="10.0" />
                     </GridPane.margin>
                 </HBox>
-                <Label text="PKChat - v1.0 (Sodium)" textFill="#f89406" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                <Label text="JavaFX Version 0.3" textFill="#f89406" GridPane.columnIndex="1" GridPane.rowIndex="8">
                     <font>
                         <Font size="10.0" />
                     </font>
