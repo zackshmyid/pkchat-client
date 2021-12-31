@@ -26,7 +26,7 @@ public class Server {
     static Logger logger = LoggerFactory.getLogger(Server.class);
 
     public static void main(String[] args) throws Exception {
-        logger.info("Chat Server Sudah Menyala!");
+        logger.info("Chat Server Sudah Menyala! Sambungan Dengan Port 9001. Matikan Server Dengan Memencet : Ctrl + C");
         ServerSocket listener = new ServerSocket(PORT);
 
         try {
