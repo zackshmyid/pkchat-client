@@ -4,7 +4,7 @@ Selamat Datang Di Repository PK Chat,
 
 Cara Menggunakan Client : 
 
-1. Download Client - Latest Di : https://github.com/smpkska/pkchat-client/releases/download/latest/pkchat.jar
+1. Download Client - Latest Di : https://github.com/smpkska/pkchat-client/releases/latest/download/pkchat.jar
 2. Apabila Kalian belum Memiliki Java Silahkan Download Java Terlebih Dahulu Di : https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html
 3. Apabila Sudah Memiliki Java Silahkan Ketik Ini Di CMD : 
 ```
@@ -21,7 +21,7 @@ Pastikan Device Yang akan di gunakan untuk menjadi server memenuhi dibawah ini :
 Internet
 Java JRE 8+
 
-1. Download Server - Latest Di : https://github.com/smpkska/pkchat-client/releases/download/latest/server.jar
+1. Download Server - Latest Di : https://github.com/smpkska/pkchat-client/releases/latest/download/server.jar
 2. Gunakan ``tmux`` untuk membuat server 24/7 (Untuk Linux)
 3. Ketik : 
 ```
