@@ -1,4 +1,5 @@
 package com.messages;
 
-public class Status {
+public enum Status {
+    ONLINE, AWAY, BUSY
 }
