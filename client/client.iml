@@ -10,6 +10,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="javafx.media" level="project" />
     <orderEntry type="library" name="Maven: org.fxmisc.richtext:richtextfx:0.6.10" level="project" />
     <orderEntry type="library" name="Maven: org.reactfx:reactfx:2.0-M4u1" level="project" />
     <orderEntry type="library" name="Maven: org.fxmisc.undo:undofx:1.2" level="project" />
@@ -26,8 +27,10 @@
     <orderEntry type="library" name="Maven: org.openjfx:javafx-base:win:11" level="project" />
     <orderEntry type="library" name="Maven: io.sentry:sentry:5.5.2" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.google.code.gson:gson:2.8.5" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:17" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:win:17" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:11.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:win:11.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-media:11.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-media:win:11.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.maven.plugins:maven-compiler-plugin:3.6.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.maven:maven-plugin-api:3.0" level="project" />
     <orderEntry type="library" name="Maven: org.sonatype.sisu:sisu-inject-plexus:1.4.2" level="project" />
@@ -82,6 +85,5 @@
     <orderEntry type="library" name="Maven: junit:junit:3.8.1" level="project" />
     <orderEntry type="library" name="Maven: classworlds:classworlds:1.1-alpha-2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.maven.shared:maven-repository-builder:1.0-alpha-2" level="project" />
-    <orderEntry type="library" name="javafx.media" level="project" />
   </component>
 </module>
