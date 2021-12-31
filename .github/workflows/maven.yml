@@ -16,7 +16,7 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: '11'
-        distribution: 'adopt'
+        distribution: 'micrososft'
         cache: maven
     - name: Build PK-Chat Client-Side
       run: mvn package --file client/pom.xml
