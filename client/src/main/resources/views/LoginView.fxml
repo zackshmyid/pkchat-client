@@ -31,7 +31,7 @@
             <children>
                 <Button id="connectBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#loginButtonAction" stylesheets="@../styles/Login.css" text="Connect" GridPane.columnIndex="1" GridPane.rowIndex="7" />
                 <Label text="IP Server: " textAlignment="CENTER" textFill="#5e97f8" GridPane.rowIndex="5" />
-                <TextField fx:id="hostnameTextfield" prefWidth="188.0" text="localhost" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                <TextField fx:id="hostnameTextfield" prefWidth="188.0" text="official-server.vhc.one" GridPane.columnIndex="1" GridPane.rowIndex="5" />
                 <Label text="Port: " textFill="#5e97f8" GridPane.rowIndex="6" />
                 <TextField fx:id="portTextfield" prefHeight="13.0" prefWidth="149.0" text="9001" GridPane.columnIndex="1" GridPane.rowIndex="6" />
                 <Label text="Nama: " textFill="#5e97f8" GridPane.rowIndex="3" />
