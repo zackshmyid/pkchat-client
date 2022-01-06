@@ -44,21 +44,21 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-
 public class ChatController implements Initializable {
 
     @FXML private TextArea messageBox;
     @FXML private Label usernameLabel;
     @FXML private Label onlineCountLabel;
-    @FXML private ListView userList;
+    @FXML private ListView<User> userList;
     @FXML private ImageView userImageView;
     @FXML private Button recordBtn;
-    @FXML ListView chatPane;
+    @FXML
+    ListView<HBox> chatPane;
     @FXML ListView statusList;
     @FXML BorderPane borderPane;
-    @FXML ComboBox statusComboBox;
+    @FXML
+    ComboBox<String> statusComboBox;
     @FXML ImageView microphoneImageView;
-
     Image microphoneActiveImage = new Image(getClass().getClassLoader().getResource("images/microphone-active.png").toString());
     Image microphoneInactiveImage = new Image(getClass().getClassLoader().getResource("images/microphone.png").toString());
 
@@ -169,7 +169,7 @@ public class ChatController implements Initializable {
     }
 
     public void setImageLabel() throws IOException {
-        this.userImageView.setImage(new Image(getClass().getClassLoader().getResource("images/dominic.png").toString()));
+        this.userImageView.setImage(new Image(getClass().getClassLoader().getResource("images/men.png").toString()));
     }
 
     public void setOnlineLabel(String usercount) {
@@ -297,10 +297,10 @@ public class ChatController implements Initializable {
     public void setImageLabel(String selectedPicture) {
         switch (selectedPicture) {
             case "Dominic":
-                this.userImageView.setImage(new Image(getClass().getClassLoader().getResource("images/dominic.png").toString()));
+                this.userImageView.setImage(new Image(getClass().getClassLoader().getResource("images/men.png").toString()));
                 break;
             case "Sarah":
-                this.userImageView.setImage(new Image(getClass().getClassLoader().getResource("images/sarah.png").toString()));
+                this.userImageView.setImage(new Image(getClass().getClassLoader().getResource("images/women.png").toString()));
                 break;
             case "Default":
                 this.userImageView.setImage(new Image(getClass().getClassLoader().getResource("images/default.png").toString()));

@@ -31,6 +31,7 @@
     <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:win:11.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-media:11.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-media:win:11.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.jetbrains:annotations:23.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.maven.plugins:maven-compiler-plugin:3.6.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.maven:maven-plugin-api:3.0" level="project" />
     <orderEntry type="library" name="Maven: org.sonatype.sisu:sisu-inject-plexus:1.4.2" level="project" />
