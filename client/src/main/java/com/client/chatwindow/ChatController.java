@@ -296,10 +296,10 @@ public class ChatController implements Initializable {
 
     public void setImageLabel(String selectedPicture) {
         switch (selectedPicture) {
-            case "Dominic":
+            case "Men":
                 this.userImageView.setImage(new Image(getClass().getClassLoader().getResource("images/men.png").toString()));
                 break;
-            case "Sarah":
+            case "Women":
                 this.userImageView.setImage(new Image(getClass().getClassLoader().getResource("images/women.png").toString()));
                 break;
             case "Default":
