@@ -22,11 +22,11 @@ public class Server {
     /* Setting up variables */
     private static final int PORT = 9001;
     private static final HashMap<String, User> names = new HashMap<>();
-    private static HashSet<ObjectOutputStream> writers = new HashSet<>();
-    private static ArrayList<User> users = new ArrayList<>();
+    private static final HashSet<ObjectOutputStream> writers = new HashSet<>();
+    private static final ArrayList<User> users = new ArrayList<>();
     static Logger logger = LoggerFactory.getLogger(Server.class);
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         logger.info("Selamat Datang Di PK-Chat. Pastikan Port 9001 Telah Terbuka!");
 
         try (ServerSocket listener = new ServerSocket(PORT)) {
@@ -41,8 +41,8 @@ public class Server {
 
     private static class Handler extends Thread {
         private String name;
-        private Socket socket;
-        private Logger logger = LoggerFactory.getLogger(Handler.class);
+        private final Socket socket;
+        private final Logger logger = LoggerFactory.getLogger(Handler.class);
         private User user;
         private ObjectInputStream input;
         private OutputStream os;
@@ -57,7 +57,6 @@ public class Server {
             logger.info("Mencoba menghubungkan pengguna...");
             try {
                 input = new ObjectInputStream(is);
-                os = socket.getOutputStream();
                 output = new ObjectOutputStream(os);
 
                 Message firstMessage = (Message) input.readObject();
