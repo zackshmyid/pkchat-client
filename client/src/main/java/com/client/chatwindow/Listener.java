@@ -23,9 +23,7 @@ public class Listener implements Runnable{
     public static String username;
     public ChatController controller;
     private static ObjectOutputStream oos;
-    private InputStream is;
     private ObjectInputStream input;
-    private OutputStream outputStream;
     Logger logger = LoggerFactory.getLogger(Listener.class);
 
     public Listener(String hostname, int port, String username, String picture, ChatController controller) {
@@ -40,9 +38,9 @@ public class Listener implements Runnable{
         try {
             socket = new Socket(hostname, port);
             LoginController.getInstance().showScene();
-            outputStream = socket.getOutputStream();
+            OutputStream outputStream = socket.getOutputStream();
             oos = new ObjectOutputStream(outputStream);
-            is = socket.getInputStream();
+            InputStream is = socket.getInputStream();
             input = new ObjectInputStream(is);
         } catch (IOException e) {
             LoginController.getInstance().showErrorDialog("Could not connect to server");
@@ -54,7 +52,7 @@ public class Listener implements Runnable{
             connect();
             logger.info("Sockets in and out ready!");
             while (socket.isConnected()) {
-                Message message = null;
+                Message message;
                 message = (Message) input.readObject();
 
                 if (message != null) {
