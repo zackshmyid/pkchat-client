@@ -26,7 +26,7 @@ public class Server {
     static Logger logger = LoggerFactory.getLogger(Server.class);
 
     public static void main(String[] args) throws Exception {
-        logger.info("Selamat Datang Di PK-Chat. Pastikan Port 9001 Telah Terbuka Ya!");
+        logger.info("Selamat Datang Di PK-Chat. Pastikan Port 9001 Telah Terbuka!");
         ServerSocket listener = new ServerSocket(PORT);
 
         try {
