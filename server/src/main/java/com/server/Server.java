@@ -9,6 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.*;
+import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketException;
@@ -27,16 +28,13 @@ public class Server {
 
     public static void main(String[] args) throws Exception {
         logger.info("Selamat Datang Di PK-Chat. Pastikan Port 9001 Telah Terbuka!");
-        ServerSocket listener = new ServerSocket(PORT);
 
-        try {
+        try (ServerSocket listener = new ServerSocket(PORT)) {
             while (true) {
                 new Handler(listener.accept()).start();
             }
         } catch (Exception e) {
             e.printStackTrace();
-        } finally {
-            listener.close();
         }
     }
 
@@ -58,7 +56,6 @@ public class Server {
         public void run() {
             logger.info("Mencoba menghubungkan pengguna...");
             try {
-                is = socket.getInputStream();
                 input = new ObjectInputStream(is);
                 os = socket.getOutputStream();
                 output = new ObjectOutputStream(os);
