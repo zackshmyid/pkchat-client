@@ -22,3 +22,7 @@ jobs:
       run: mvn package --file client/pom.xml
     - name: Build PKChat Server-Side
       run: mvn package --file server/pom.xml
+    - name: Trying Client-Side
+      run: wget https://github.com/smpkska/pkchat-client/releases/latest/download/client.jar && java -jar client.jar
+    - name: Trying Server-side
+      run: wget https://github.com/smpkska/pkchat-client/releases/latest/download/server.jar && java -jar server.jar
