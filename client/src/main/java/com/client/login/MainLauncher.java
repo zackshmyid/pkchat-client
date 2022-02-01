@@ -9,6 +9,8 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
+import java.util.Objects;
+
 public class MainLauncher extends Application {
 
     private static Stage primaryStageObj;
@@ -16,9 +18,9 @@ public class MainLauncher extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         primaryStageObj = primaryStage;
-        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("views/LoginView.fxml"));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("views/LoginView.fxml")));
         primaryStage.initStyle(StageStyle.UNDECORATED);
-        primaryStage.setTitle("PKChat - 1.0 (Sodium)");
+        primaryStage.setTitle("PKChat - 1.1 (Sodium)");
         Scene mainScene = new Scene(root, 350, 420);
         mainScene.setRoot(root);
         primaryStage.setResizable(false);
