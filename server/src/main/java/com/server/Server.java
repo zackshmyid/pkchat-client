@@ -5,7 +5,6 @@ import com.messages.Message;
 import com.messages.MessageType;
 import com.messages.Status;
 import com.messages.User;
-import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -97,7 +96,6 @@ public class Server {
             }
         }
 
-        private @NotNull
         Message changeStatus(Message inputmsg) throws IOException {
             logger.debug(inputmsg.getName() + " Telah Mengganti Status Ke  " + inputmsg.getStatus());
             Message msg = new Message();
