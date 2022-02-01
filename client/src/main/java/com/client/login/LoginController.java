@@ -24,19 +24,17 @@ import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import javafx.util.Duration;
+import org.jetbrains.annotations.NotNull;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.Random;
 import java.util.ResourceBundle;
 
-/**
- *  Created by Dominic on 12-Nov-15.
- */
 public class LoginController implements Initializable {
     @FXML private ImageView Defaultview;
-    @FXML private ImageView Sarahview;
-    @FXML private ImageView Dominicview;
+    @FXML private ImageView Wanitaview;
+    @FXML private ImageView Priaview;
     @FXML public  TextField hostnameTextfield;
     @FXML private TextField portTextfield;
     @FXML private TextField usernameTextfield;
@@ -124,11 +122,11 @@ public class LoginController implements Initializable {
                         case "Default":
                             Defaultview.setVisible(false);
                             break;
-                        case "Dominic":
-                            Dominicview.setVisible(false);
+                        case "Pria":
+                            Priaview.setVisible(false);
                             break;
-                        case "Sarah":
-                            Sarahview.setVisible(false);
+                        case "Wanita":
+                            Wanitaview.setVisible(false);
                             break;
                     }
                 }
@@ -137,11 +135,11 @@ public class LoginController implements Initializable {
                         case "Default":
                             Defaultview.setVisible(true);
                             break;
-                        case "Dominic":
-                            Dominicview.setVisible(true);
+                        case "Pria":
+                            Priaview.setVisible(true);
                             break;
-                        case "Sarah":
-                            Sarahview.setVisible(true);
+                        case "Wanita":
+                            Wanitaview.setVisible(true);
                             break;
                     }
                 }
