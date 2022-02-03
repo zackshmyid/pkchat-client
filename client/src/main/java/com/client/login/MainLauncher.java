@@ -5,7 +5,6 @@ import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -20,7 +19,7 @@ public class MainLauncher extends Application {
         primaryStageObj = primaryStage;
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("views/LoginView.fxml")));
         primaryStage.initStyle(StageStyle.UNDECORATED);
-        primaryStage.setTitle("PKChat - 1.1 (Sodium)");
+        primaryStage.setTitle("PKChat - 1.2 (Sodium)");
         Scene mainScene = new Scene(root, 350, 420);
         mainScene.setRoot(root);
         primaryStage.setResizable(false);
